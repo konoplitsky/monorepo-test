@@ -1,12 +1,7 @@
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import { RouterProvider } from "react-router-dom";
 import "./style.css";
+import hostRouter from "./router/Router";
 
 const container = document.getElementById("app")!;
-createRoot(container).render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-);
-
+createRoot(container).render(<RouterProvider router={hostRouter} />);

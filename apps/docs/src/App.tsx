@@ -1,10 +1,11 @@
+import { Link, Outlet } from "react-router-dom";
+
 export default function App() {
   return (
     <div>
-      <nav style={{ display: "flex", gap: 12 }}>
-        <a href="/">Web App</a>
-      </nav>
-        <h1>Docs</h1>
+      <h1>Docs module</h1>
+      <Link to="/docs/about">Перейти на about page</Link>
+      <Outlet />
     </div>
   );
 }

@@ -2,6 +2,7 @@
   "extends": "@repo/typescript-config/vite.json",
   "include": ["src"],
   "compilerOptions": {
+    "moduleResolution": "bundler",
     "strictNullChecks": true,
     "jsx": "react-jsx"
   }
